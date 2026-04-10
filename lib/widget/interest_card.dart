@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class InterestCard extends StatelessWidget {
   final String image;
   final String title;
@@ -21,24 +20,20 @@ class InterestCard extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
 
-        boxShadow:[
-          BoxShadow(
-            color: Colors.black12,
-            blurRadius: 6,
-            offset: Offset(0, 3)
-          )
-        ]
+        boxShadow: [
+          BoxShadow(color: Colors.black12, blurRadius: 6, offset: Offset(0, 3)),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.vertical(top: Radius.circular(12),
-            ),
-            child: Image.network(image,
-            height: 110,
-            width: double.infinity,
-            fit: BoxFit.cover,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
+            child: Image.network(
+              image,
+              height: 110,
+              width: double.infinity,
+              fit: BoxFit.cover,
             ),
           ),
 
@@ -47,46 +42,42 @@ class InterestCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title,
-                  style:TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14
-                  ) ,),
-                SizedBox(height: 5,),
+                Text(
+                  title,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                SizedBox(height: 5),
 
                 Text(
                   subtitle,
-                  style: TextStyle(
-                    fontSize: 11,
-                    color: Colors.grey.shade700,
-                  ),
+                  style: TextStyle(fontSize: 11, color: Colors.grey.shade700),
                 ),
-                SizedBox(height: 10,),
+                SizedBox(height: 10),
 
                 // Button
                 SizedBox(
                   width: double.infinity,
-                  child: OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                        backgroundColor: Colors.grey.shade100,
-                        side: BorderSide.none,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.grey.shade100,
+                      side: BorderSide.none,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
                       ),
-                      onPressed: (){}, child:  Text('View More',
-                    style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold
                     ),
-                  ) ),
-                )
-
-
-
+                    onPressed: () {},
+                    child: Text(
+                      'View More',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

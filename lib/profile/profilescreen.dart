@@ -59,6 +59,8 @@ class ProfileScreen extends StatelessWidget {
                     color: Colors.black12,
                   ),
 
+                  SizedBox(height: 10),
+
                   // Email & phone number
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 60),
@@ -73,7 +75,7 @@ class ProfileScreen extends StatelessWidget {
                           ],
                         ),
 
-                        SizedBox(height: 10),
+                        SizedBox(height: 9),
 
                         Row(
                           children: [
@@ -118,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
                         width: 139,
                         child: OutlinedButton(
                           style: OutlinedButton.styleFrom(
-                            backgroundColor: Colors.white,
+                            backgroundColor: Colors.white60,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(6),
                             ),

@@ -8,13 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     theme: ThemeData(
-       scaffoldBackgroundColor: Colors.grey.shade200
-     ),
-
-
-    home: ProfileScreen(),
-
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.grey.shade200),
+      home: ProfileScreen(),
     );
   }
 }
