@@ -139,16 +139,14 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 14),
+                  SizedBox(height: 15),
                 ],
               ),
             ),
 
-            SizedBox(height: 10),
-
             // Interests
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(8),
               child: Row(
                 children: [
                   Expanded(child: Divider(thickness: 2, color: Colors.black12)),
@@ -167,8 +165,6 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 10),
-
             // InterestCard
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -183,7 +179,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(width: 10),
+                  SizedBox(width: 12),
 
                   Expanded(
                     child: InterestCard(
